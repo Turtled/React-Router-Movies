@@ -19,9 +19,6 @@ const Movie = (props) => {
         .catch(error => {
           console.log("error");
         })
-        .finally(() => {
-          console.log("useEffect doing SOMETHING atleast");
-        });
 
   }, [props.match.params.id]);
   
